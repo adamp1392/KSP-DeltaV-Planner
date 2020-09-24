@@ -8,6 +8,7 @@ export class Kerbin implements Planet {
   readonly imageUrl = 'assets/planets/kerbin.png';
   readonly dvGL = 3400;
   readonly dvLE = 950;
+  readonly dvK = null;
   readonly dvKeostat = 1115;
   readonly color = '#2A7EFE';
   readonly satellites = [

@@ -27,7 +27,7 @@ interface AbstractBody {
 export interface Planet extends AbstractBody {
   readonly dvLE?: number; // Low Orbit <-> Elliptical Orbit to SOI Edge
   readonly dvEI?: number; // Elliptical Orbit to SOI Edge <-> Intercept
-  readonly dvK?: number; // Intercept <-> Kerbin Elliptical Orbit to SOI Edge
+  readonly dvK: number | null; // Intercept <-> Kerbin Elliptical Orbit to SOI Edge
   readonly satellites: Satellite[];
 }
 
